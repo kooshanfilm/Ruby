@@ -15,6 +15,7 @@ def greet(name,number)
 
 end
 
+#test
 def get_phone_number()
 	print "What is your number"
 	return gets.chomp.to_i

@@ -12,3 +12,8 @@ puts book.inspect
 drop_2 = book.drop(1)
 
 print drop_2
+
+book.shift #remove from beginign of array
+
+book.push("ten") # will add to end of the array 
+

@@ -13,3 +13,4 @@ puts hash.member?("item")
 
 # give the value for the key
 puts hash["item2"]
+

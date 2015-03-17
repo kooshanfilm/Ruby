@@ -12,7 +12,7 @@ def add_list_item
 	item_name = gets.chomp
 
 	print "How much "
-	quantity = gets.chomp.to_i
+	quantity = gets.chomp.to_i #get.chomp by defult is string 
 
 	hash = {"name" => item_name , "quantity" => quantity}
 
@@ -26,19 +26,19 @@ def print_seperator(character="")
 
 def print_list(list)
 	puts "List #{list['name']}"
-	print_seperator
+	print_seperator(-)
 
 	list["items"].each do |item|
 		puts "Item " + item['name']
 		puts "quantity" + item['quantity'].to_s
-		print_seperator
+		print_seperator(-)
 	end
 
 	
 end
 
 
-list = create_list()
+list = create_list() # will insert the hash into the list 
 list['items'].push(add_list_item)
 puts "My list now #{list.inspect}"
 

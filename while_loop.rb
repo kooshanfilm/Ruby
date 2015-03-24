@@ -15,4 +15,4 @@ def print_hello(how_many_times)
 	end
 end
 
-print_hello(3).new
+print_hello(3)

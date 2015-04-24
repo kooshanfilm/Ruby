@@ -27,12 +27,9 @@ class BankAccount
 		puts "your name #{name}"
 		puts "description"
 		@transactions.each do |transaction|
-		puts transaction[:description] + "" + transaction[:amount].to_s
+		puts transaction[:description] + "" + transaction[:amount]
 
 	end
-
-
-
 
 
 	def add_transation(description,amount)

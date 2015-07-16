@@ -1,3 +1,5 @@
+require 'pry'
+
 class Learning
 
 def initialize(my_value)
@@ -54,10 +56,27 @@ def array
   return @my_array.inspect
 end
 
+def array_2
+  @my_array  = [3,2,4,2,3]
+  my_new_array = Array.new(@my_array.length)
+  @my_array.each do |number|
+
+    puts "number here is #{number}"
+    my_new_array.push(number)
+    puts "my new array here is #{@my_new_array.inspect}"
+    binding.pry
+
+  end
+  puts my_new_array.inspect
+
+end
+
+
 
 
 
 end
 
 function_call = Learning.new(1)
-puts function_call.array
+function_call.array_2
+

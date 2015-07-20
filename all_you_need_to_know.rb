@@ -59,24 +59,30 @@ end
 def array_2
   @my_array  = [3,2,4,2,3]
   my_new_array = Array.new(@my_array.length)
-  @my_array.each do |number|
+  @my_array.each do |number,index|
 
     puts "number here is #{number}"
     my_new_array.push(number)
     puts "my new array here is #{@my_new_array.inspect}"
-    binding.pry
-
   end
   puts my_new_array.inspect
-
 end
 
+def each_with_index
+  @my_array = ["index1","index2","index3"]
+  @my_array.each_with_index do |item,index|
+    puts "Item name #{item} and the index is #{index}"
+  end
+end
 
-
+def select
+  @my_array = [1,2,3,4,5,6]
+  @my_array.select { |item| puts item%2==0  }
+end
 
 
 end
 
 function_call = Learning.new(1)
-function_call.array_2
+function_call.select
 

@@ -84,5 +84,5 @@ end
 end
 
 function_call = Learning.new(1)
-function_call.select
+function_call.each_loop
 
